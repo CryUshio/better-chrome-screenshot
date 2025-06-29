@@ -1,0 +1,24 @@
+---
+description: Project Intro
+globs: 
+alwaysApply: false
+---
+
+# 背景
+- 此项目使用 react + webpack 搭建的 chrome 扩展仓库，并使用 tailwindcss 编写样式，图标库是 @heroicons/react，组件库是 @headlessui/react
+- 此项目主要功能是网页截图。包括截全屏、截全网页、区域截图，截图后的图片编辑器。
+- background 是扩展主进程，无浏览器环境
+- content_script 是运行在宿主环境的前台脚本，可以访问网页 window 环境
+- 项目是**浅色系**
+
+# SEO
+- 项目名称是 Better Chrome Screenshot
+- 默认使用英文，支持多语言
+
+# 注意
+- 图标优先使用图标库，UI 优先使用组件库组件结合 tailwindcss
+- 禁止添加重试机制！通过时序控制替代！
+- 所有前台交互操作都要写在 content_script 中，禁止直接调用 chrome.scripting.executeScript
+- 代码需要有必要的设计和拆分，遵循面向对象程序设计，增加可读性和可维护性，请根据项目结构合理拆分和存放，请勿全部写入一个文件
+- 请将我对某个文件的需求通过注释更新到文件头部，方便下次读取
+- 将一些通用的实验结论写入 readme 方便后续使用

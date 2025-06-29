@@ -1,0 +1,39 @@
+/* Options 组件专用样式 */
+@import "./globals.css";
+
+/* Options 根元素样式 */
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Options 页面背景 */
+body {
+  background-color: #f9fafb !important;
+}
+
+/* Options 特定的响应式设计 */
+@media (max-width: 768px) {
+  .max-w-2xl {
+    max-width: calc(100vw - 40px);
+  }
+  
+  .px-6 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .py-4 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+/* Options 卡片样式优化 */
+.options-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+} 
